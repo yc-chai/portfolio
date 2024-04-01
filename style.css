@@ -1,83 +1,68 @@
 :root {
-    --max-width: 1600px;
-    --zindex-nav: 1000;
-
     --bodyFont: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    --font-h1: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem);
+    --color-primary: #BB86FC;
+    --color-primary-variant: #3700B3;
+    --color-secondary: #03DAC6;
+    --color-background: #121212;
+    --color-surface: #121212;
+    --color-error: #CF6679;
+    --color-on-primary: #000000;
+    --color-on-secondary: #000000;
+    --color-on-background: #FFFFFF;
+    --color-on-surface: #FFFFFF;
+    --color-on-error: #000000;
     
-    --color-background: #666666;
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #999999;
-    --color-text-tertiary: #000000;
-    --color-text-quarterly: #333333;
-    --color-backdrop: hsla(0, 0%, 0%, .1);
+    --high-emphasis-text-opacity: 87%;
+    --medium-emphasis-text-opacity: 60%;
+    --disabled-text-opacity: 38%;
+    
+    --font-h1: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem);
+
+    --zindex-nav: 1000;
 }
 
 body {
+    font-family: var(--bodyFont);
     background-color: var(--color-background);
-    color: var(--color-text-primary);
-    font-family: var(--bodyFont)
+    color: var(--color-on-background);
 }
 
 header {
+    background-color: var(--color-error);
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: var(--zindex-nav);
+    left: 0;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: var(--max-width);
-    margin: 1.25rem auto 0;
     position: relative;
 }
 
 nav ul {
-    list-style-type: none; 
-    padding-left: 0%;
     display: flex;
+    list-style-type: none;
+    padding-left: 0%;
     gap: 1.25rem;
-
-    margin: 0;
-    padding: cal(1.25rem - 10px);
-    border-radius: 50px;
-    transition: all .2s linear;
 }
 
-a {
+nav ul a {
     text-decoration: none;
-    border-radius: 1.5rem;
-    color: var(--color-text-tertiary);
+    color: var(--color-on-surface);
 }
 
 h1 {
+    position: relative;
     text-align: center;
     font-size: var(--font-h1);
     line-height: 100%;
-}
-
-
-.blur {
-    background: var(--color-backdrop);
-    backdrop-filter: blur(20px);
 }
 
 .holder {
     display: flex;
     justify-content: center;
     position: relative;
-}
-
-.wrapper {
-    padding: 0 1.5rem;
-    display: grid;
-    position: relative;
-}
-
-.center {
-    text-align: center;
 }
