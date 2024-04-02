@@ -1,17 +1,28 @@
 :root {
     --bodyFont: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    --color-primary: #BB86FC;
-    --color-primary-variant: #3700B3;
-    --color-secondary: #03DAC6;
-    --color-background: #121212;
-    --color-surface: #121212;
-    --color-error: #CF6679;
-    --color-on-primary: #000000;
-    --color-on-secondary: #000000;
-    --color-on-background: #FFFFFF;
-    --color-on-surface: #FFFFFF;
-    --color-on-error: #000000;
+    --color-primary: rgb(188, 136, 252);
+    --color-primary-variant: rgb(55, 0, 179);
+    --color-on-primary: rgb(0, 0, 0);
+
+    --color-secondary: rgb(3, 218, 198);
+    --color-on-secondary: rgb(0, 0, 0);
+
+    --color-background: rgb(18, 18, 18);
+    --color-on-background: rgb(255, 255, 255);
+
+    --color-surface: rgb(18, 18, 18);
+    --color-surface-3dp: rgb(20, 20, 20);
+    --color-surface-4dp: rgb(23, 23, 23);
+    --color-surface-6dp: rgb(28, 28, 28);
+    --color-surface-8dp: rgb(31, 31, 31);
+    --color-surface-12dp: rgb(36, 36, 36);
+    --color-surface-16dp: rgb(38, 38, 38);
+    --color-surface-24dp: rgb(41, 41, 41);
+    --color-on-surface: rgb(255, 255, 255);
+    
+    --color-error: rgb(207, 102, 121);
+    --color-on-error: rgb(0, 0, 0);
     
     --high-emphasis-text-opacity: 87%;
     --medium-emphasis-text-opacity: 60%;
@@ -29,7 +40,7 @@ body {
 }
 
 header {
-    background-color: var(--color-error);
+    background-color: var(--color-surface-8dp);
     position: fixed;
     width: 100%;
     top: 0;
