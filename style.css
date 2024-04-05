@@ -1,8 +1,10 @@
 :root {
-    --titleFont: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --bodyFont: "Courier New", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --titleFont: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --bodyFont: "Courier New", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-    --font-h1: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem);
+  /* --font-h1: clamp(3.2rem, .5692rem + 7.238vw, 13.75rem);
     --font-h2: clamp(1.5rem, 1.0982rem + 1.7143vw, 2.8125rem);
     --font-h3: clamp(1.375rem, 1.1837rem + .8163vw, 2rem);
     --font-h4: clamp(1.375rem, 1.1837rem + .8163vw, 1.6rem);
@@ -10,107 +12,360 @@
     --font-h6: clamp(1rem, .9617rem + .1633vw, 1.125rem);
     --font-body: clamp(1rem, .8852rem + .4898vw, 1.375rem);
     --font-link: clamp(.875rem, .7985rem + .3265vw, 1.125rem);
-    --font-mini: clamp(.875rem, .8367rem + .1633vw, 1rem);
+    --font-mini: clamp(.875rem, .8367rem + .1633vw, 1rem); */
 
-    --color-primary: rgb(188, 136, 252);
-    --color-primary-variant: rgb(55, 0, 179);
-    --color-on-primary: rgb(0, 0, 0);
+  --color-primary: rgb(188, 136, 252);
+  --color-primary-variant: rgb(55, 0, 179);
+  --color-on-primary: rgb(0, 0, 0);
 
-    --color-secondary: rgb(3, 218, 198);
-    --color-on-secondary: rgb(0, 0, 0);
+  --color-secondary: rgb(3, 218, 198);
+  --color-on-secondary: rgb(0, 0, 0);
 
-    --color-background: rgb(18, 18, 18);
-    --color-on-background: rgb(255, 255, 255);
+  --color-surface-0dp: rgb(0, 0, 0);
+  --color-surface-1dp: rgb(13, 13, 13);
+  --color-surface-2dp: rgb(18, 18, 18);
+  --color-surface-3dp: rgb(20, 20, 20);
+  --color-surface-4dp: rgb(23, 23, 23);
+  --color-surface-6dp: rgb(28, 28, 28);
+  --color-surface-8dp: rgb(31, 31, 31);
+  --color-surface-12dp: rgb(36, 36, 36);
+  --color-surface-16dp: rgb(38, 38, 38);
+  --color-surface-24dp: rgb(41, 41, 41);
+  --color-on-surface: rgb(255, 255, 255);
+  --color-on-surface-light: rgb(230, 230, 230);
 
-    --color-surface: rgb(18, 18, 18);
-    --color-surface-3dp: rgb(20, 20, 20);
-    --color-surface-4dp: rgb(23, 23, 23);
-    --color-surface-6dp: rgb(28, 28, 28);
-    --color-surface-8dp: rgb(31, 31, 31);
-    --color-surface-12dp: rgb(36, 36, 36);
-    --color-surface-16dp: rgb(38, 38, 38);
-    --color-surface-24dp: rgb(41, 41, 41);
-    --color-on-surface: rgb(255, 255, 255);
-    
-    --color-error: rgb(207, 102, 121);
-    --color-on-error: rgb(0, 0, 0);
-    
-    --high-emphasis-text-opacity: 87%;
-    --medium-emphasis-text-opacity: 60%;
-    --disabled-text-opacity: 38%;
+  --color-error: rgb(207, 102, 121);
+  --color-on-error: rgb(0, 0, 0);
 
-    --zindex-nav: 1000;
+  --high-emphasis-text-opacity: 87%;
+  --medium-emphasis-text-opacity: 60%;
+  --disabled-text-opacity: 38%;
+
+  --zindex-nav: 1000;
 }
 
-body, html {
-    font-family: var(--bodyFont);
-    font-size: var(--font-body);
-    color: var(--color-on-background);
-    background: var(--color-background);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    position: relative;
+body,
+html {
+  font-family: var(--bodyFont);
+  font-size: var(--font-body);
+  color: var(--color-on-surface);
+  background: var(--color-surface-1dp);
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--titleFont);
-    font-weight: 700;
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
 }
 
-header {
-    background-color: var(--color-surface-8dp);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--titleFont);
+  font-weight: 700;
+  padding: 0;
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.frame {
+  padding: 3rem 1.5rem;
+  max-width: 1280px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  padding-top: 6rem;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-on-surface);
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  letter-spacing: -0.025rem;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.intro h2 {
+  letter-spacing: -0.025rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 0.75rem;
+}
+
+.intro p {
+  line-height: 1.5;
+  max-width: 20rem;
+  margin-top: 1rem;
 }
 
 nav {
+  width: max-content;
+}
+
+nav li a {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  align-items: center;
+  display: flex;
+}
+
+.social-media-list ul {
+  align-items: center;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.social-media-list ul li {
+  flex-shrink: 0;
+  margin-right: 1.25rem;
+}
+
+.social-media {
+  vertical-align: middle;
+  overflow: visible;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-on-surface-light);
+  fill: currentColor;
+}
+
+.about {
+  scroll-margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+.experience {
+  margin-bottom: 4rem;
+}
+
+.experience li {
+  margin-bottom: 3rem;
+  display: grid;
+}
+
+.experience .date {
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience .details .position {
+  align-items: baseline;
+  display: inline-flex;
+  line-height: 1.25;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.experience .details .job-description {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.projects {
+  margin-bottom: 4rem;
+}
+
+.projects li {
+  margin-bottom: 3rem;
+  display: grid;
+  position: relative;
+}
+
+.projects li .project-topic {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 500;
+  align-items: baseline;
+}
+
+.projects li .project-description {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.projects li .featured-img {
+  border-width: 2px;
+  border-radius: 0.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (min-width: 640px) {
+  .experience li {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .experience .date {
+    grid-column: span 2 / span 2;
+  }
+
+  .experience .details {
+    grid-column: span 6 / span 6;
+  }
+
+  .projects li {
+    gap: 2rem;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .projects li .details {
+    grid-column: span 6 / span 6;
+    order: 2;
+  }
+
+  .projects li .featured-img {
+    grid-column: span 2 / span 2;
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .frame {
+    padding: 5rem 3rem;
+  }
+
+  .about {
+    scroll-margin-top: 6rem;
+  }
+
+  .experience {
+    scroll-margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .experience li {
+    gap: 1rem;
+  }
+
+  .projects {
+    scroll-margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .projects li {
+    gap: 1rem;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .frame {
+    padding: 0 6rem;
+  }
+
+  .content {
+    gap: 1rem;
+    justify-content: space-between;
     display: flex;
-    justify-content: center;
-    position: relative;
-}
+  }
 
-ul.nav {
+  .content header {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    max-height: 100vh;
     display: flex;
-    list-style-type: none;
-    padding-left: 0%;
-    gap: 1.25rem;
-}
+    position: sticky;
+    padding: 6rem 0;
+    top: 0;
+  }
 
-ul.nav a {
-    text-decoration: none;
-    color: var(--color-on-surface);
-}
+  main {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 50%;
+  }
 
-.content {
-    margin-top: 100px;
-}
+  .about {
+    scroll-margin-top: 6rem;
+    margin-bottom: 9rem;
+  }
 
-div.title h1 {
-    position: relative;
-    text-align: center;
-    font-size: var(--font-h1);
-    line-height: 100%;
-}
+  .experience {
+    scroll-margin-top: 6rem;
+    margin-bottom: 9rem;
+  }
 
-.holder {
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
-
-div .text-center {
-    display: flex;
-    padding: 0 4rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-@media(max-width: 768px) {
-
+  .projects {
+    scroll-margin-top: 6rem;
+    margin-bottom: 9rem;
+  }
 }
