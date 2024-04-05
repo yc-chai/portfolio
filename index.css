@@ -42,7 +42,7 @@ html {
   background: var(--color-surface-1dp);
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -175,6 +175,18 @@ nav li a {
   fill: currentColor;
 }
 
+.about h2,
+.experience h2,
+.projects h2 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  width: 100vw;
+}
+
 .about {
   scroll-margin-top: 4rem;
   margin-bottom: 4rem;
@@ -292,6 +304,15 @@ nav li a {
     padding: 5rem 3rem;
   }
 
+  .about h2,
+  .experience h2,
+  .projects h2 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+
   .about {
     scroll-margin-top: 6rem;
   }
@@ -313,6 +334,12 @@ nav li a {
   .projects li {
     gap: 1rem;
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
+  header nav {
+    display: none;
   }
 }
 
@@ -347,6 +374,17 @@ nav li a {
   .about {
     scroll-margin-top: 6rem;
     margin-bottom: 9rem;
+  }
+
+  .about h2,
+  .experience h2,
+  .projects h2 {
+    opacity: 0;
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    top: auto;
+    position: relative;
   }
 
   .experience {
