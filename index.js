@@ -1,3 +1,5 @@
+document.location.hash = "";
+
 const navLinkEls = document.querySelectorAll(".nav-link");
 const sectionEls = document.querySelectorAll(".main-section");
 

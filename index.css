@@ -8,6 +8,13 @@
 :root {
   --titleFont: "Tilt Neon", sans-serif;
   --bodyFont: "Dosis", sans-serif;
+
+  --color-background: #121212;
+  --color-surface: rgba(30, 41, 59, 0.2);
+  --color-text: #ffffff;
+
+  --color-primary: #bb86fc;
+  --color-primary-variant: #3700b3;
 }
 
 *,
@@ -75,6 +82,8 @@ video {
 
 html,
 body {
+  background: var(--color-background);
+  color: var(--color-text);
   font-family: var(--bodyFont);
   font-weight: 500;
   margin: 0;
@@ -126,7 +135,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
 }
 
 .social-media-icons ul li {
@@ -152,7 +160,6 @@ body {
   overflow: visible;
   width: 1.5rem;
   height: 1.5rem;
-  color: black;
   fill: currentColor;
 }
 
@@ -169,6 +176,7 @@ body {
 }
 
 .menu-title {
+  color: var(--color-primary);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 800;
@@ -186,11 +194,16 @@ body {
   margin-bottom: 1rem;
 }
 
-.menu-content-grid li {
+.grid-border {
   display: -ms-grid;
   display: grid;
   margin-bottom: 3rem;
-  /* position: relative; */
+  position: relative;
+  gap: 1rem;
+}
+
+.select-border {
+  position: absolute;
 }
 
 .experience-date {
@@ -238,8 +251,17 @@ body {
   border-radius: 0.25rem;
 }
 
+.social-media-svg:hover,
+.experience-position:hover,
+.project-title:hover {
+  color: var(--color-primary);
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.1s;
+}
+
 @media (min-width: 640px) {
-  .menu-content-grid li {
+  .grid-border {
     -ms-grid-columns: minmax(0, 1fr) 2rem minmax(0, 1fr) 2rem minmax(0, 1fr)
       2rem minmax(0, 1fr) 2rem minmax(0, 1fr) 2rem minmax(0, 1fr) 2rem
       minmax(0, 1fr) 2rem minmax(0, 1fr);
@@ -293,7 +315,7 @@ body {
     margin-right: -3rem;
   }
 
-  .menu-content-grid li {
+  .grid-border {
     gap: 1rem;
   }
 }
@@ -339,6 +361,7 @@ body {
   .nav-menu {
     display: block;
     margin-top: 2rem;
+    width: 25%;
   }
 
   .nav-link {
@@ -352,15 +375,9 @@ body {
     display: flex;
   }
 
-  .nav-link:hover {
-    color: aqua;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-
-  .active {
-    color: aqua;
+  .nav-link.active {
+    color: var(--color-primary);
+    font-weight: 1000;
   }
 
   .content-container-main {
@@ -376,5 +393,38 @@ body {
 
   .menu-title {
     display: none;
+  }
+
+  .select-border {
+    display: block;
+    left: -1.5rem;
+    right: -1.5rem;
+    top: -1rem;
+    bottom: -1rem;
+    z-index: 0;
+  }
+
+  .nav-link:hover,
+  .social-media-svg:hover,
+  .select-border:hover,
+  .select-border:hover ~ .experience-details .experience-position,
+  .select-border:hover ~ .project-details .project-title {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .nav-link:hover,
+  .social-media-svg:hover {
+    font-weight: 1000;
+  }
+
+  .select-border:hover {
+    background: var(--color-surface);
+  }
+
+  .select-border:hover ~ .experience-details .experience-position,
+  .select-border:hover ~ .project-details .project-title {
+    color: var(--color-primary);
   }
 }
