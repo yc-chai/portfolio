@@ -251,13 +251,15 @@ body {
   border-radius: 0.25rem;
 }
 
-.social-media-svg:hover,
-.experience-position:hover,
-.project-title:hover {
+.social-media-svg:hover {
   color: var(--color-primary);
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.1s;
+}
+
+.select-border {
+  display: none;
 }
 
 @media (min-width: 640px) {
@@ -395,7 +397,7 @@ body {
     display: none;
   }
 
-  .select-border {
+  .select-border.has-link {
     display: block;
     left: -1.5rem;
     right: -1.5rem;
@@ -406,9 +408,9 @@ body {
 
   .nav-link:hover,
   .social-media-svg:hover,
-  .select-border:hover,
-  .select-border:hover ~ .experience-details .experience-position,
-  .select-border:hover ~ .project-details .project-title {
+  .has-link:hover,
+  .has-link:hover ~ .experience-details .experience-position,
+  .has-link:hover ~ .project-details .project-title {
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
@@ -419,12 +421,12 @@ body {
     font-weight: 1000;
   }
 
-  .select-border:hover {
+  .has-link:hover {
     background: var(--color-surface);
   }
 
-  .select-border:hover ~ .experience-details .experience-position,
-  .select-border:hover ~ .project-details .project-title {
+  .has-link:hover ~ .experience-details .experience-position,
+  .has-link:hover ~ .project-details .project-title {
     color: var(--color-primary);
   }
 }
