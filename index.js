@@ -6,7 +6,7 @@ const sectionEls = document.querySelectorAll(".main-section");
 var currentSection = "about";
 window.addEventListener("scroll", () => {
   sectionEls.forEach((sectionEl) => {
-    if (window.scrollY >= sectionEl.offsetTop - sectionEl.clientHeight / 4) {
+    if (window.scrollY >= sectionEl.offsetTop - sectionEl.clientHeight / 5) {
       currentSection = sectionEl.id;
     }
   });
