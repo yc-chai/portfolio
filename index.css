@@ -47,7 +47,9 @@ html {
   background: var(--color-surface-1dp);
   margin: 0;
   padding: 0;
+  /* overflow-x: hidden; */
   position: relative;
+  scroll-behavior: smooth;
 }
 
 blockquote,
@@ -179,7 +181,7 @@ nav li a.active span:first-child {
 }
 
 nav li a span:nth-child(2) {
-  color:rgb(100 116 139);
+  color: rgb(100 116 139);
 }
 
 nav li a.active span:nth-child(2) {
@@ -206,9 +208,9 @@ nav li a.active span:nth-child(2) {
   fill: currentColor;
 }
 
-.about h2,
-.experience h2,
-.projects h2 {
+#about h2,
+#experience h2,
+#projects h2 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
@@ -218,25 +220,25 @@ nav li a.active span:nth-child(2) {
   width: 100vw;
 }
 
-.about {
+#about {
   scroll-margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.about p {
+#about p {
   margin-bottom: 1rem;
 }
 
-.experience {
+#experience {
   margin-bottom: 4rem;
 }
 
-.experience li {
+#experience li {
   margin-bottom: 3rem;
   display: grid;
 }
 
-.experience .date {
+#experience .date {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -246,7 +248,7 @@ nav li a.active span:nth-child(2) {
   margin-bottom: 0.5rem;
 }
 
-.experience .details .position {
+#experience .details .position {
   align-items: baseline;
   display: inline-flex;
   line-height: 1.25;
@@ -254,36 +256,36 @@ nav li a.active span:nth-child(2) {
   font-size: 1rem;
 }
 
-.experience .details .job-description {
+#experience .details .job-description {
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 0.5rem;
 }
 
-.projects {
+#projects {
   margin-bottom: 4rem;
 }
 
-.projects li {
+#projects li {
   margin-bottom: 3rem;
   display: grid;
   position: relative;
 }
 
-.projects li .project-topic {
+#projects li .project-topic {
   font-size: 1rem;
   line-height: 1.25;
   font-weight: 500;
   align-items: baseline;
 }
 
-.projects li .project-description {
+#projects li .project-description {
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 0.5rem;
 }
 
-.projects li .featured-img {
+#projects li .featured-img {
   border-width: 2px;
   border-radius: 0.25rem;
 }
@@ -301,30 +303,30 @@ nav li a.active span:nth-child(2) {
 }
 
 @media (min-width: 640px) {
-  .experience li {
+  #experience li {
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 2rem;
   }
 
-  .experience .date {
+  #experience .date {
     grid-column: span 2 / span 2;
   }
 
-  .experience .details {
+  #experience .details {
     grid-column: span 6 / span 6;
   }
 
-  .projects li {
+  #projects li {
     gap: 2rem;
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
-  .projects li .details {
+  #projects li .details {
     grid-column: span 6 / span 6;
     order: 2;
   }
 
-  .projects li .featured-img {
+  #projects li .featured-img {
     grid-column: span 2 / span 2;
     order: 1;
   }
@@ -335,34 +337,34 @@ nav li a.active span:nth-child(2) {
     padding: 5rem 3rem;
   }
 
-  .about h2,
-  .experience h2,
-  .projects h2 {
+  #about h2,
+  #experience h2,
+  #projects h2 {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: -3rem;
     margin-right: -3rem;
   }
 
-  .about {
+  #about {
     scroll-margin-top: 6rem;
   }
 
-  .experience {
+  #experience {
     scroll-margin-top: 4rem;
     margin-bottom: 6rem;
   }
 
-  .experience li {
+  #experience li {
     gap: 1rem;
   }
 
-  .projects {
+  #projects {
     scroll-margin-top: 6rem;
     margin-bottom: 4rem;
   }
 
-  .projects li {
+  #projects li {
     gap: 1rem;
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -402,24 +404,31 @@ nav li a.active span:nth-child(2) {
     width: 50%;
   }
 
-  .about {
+  #about {
     scroll-margin-top: 6rem;
     margin-bottom: 9rem;
   }
 
-  .about h2,
-  .experience h2,
-  .projects h2 {
+  #about h2,
+  #experience h2,
+  #projects h2 {
     display: none;
   }
 
-  .experience {
+  #experience {
     scroll-margin-top: 6rem;
     margin-bottom: 9rem;
   }
 
-  .projects {
+  #projects {
     scroll-margin-top: 6rem;
     margin-bottom: 9rem;
   }
 }
+
+/* .test {
+  background-color: white;
+  width: 2rem;
+  height: 1px;
+  margin-right: 1rem;
+} */
