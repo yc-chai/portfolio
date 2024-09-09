@@ -7,12 +7,15 @@
 
 :root {
   --titleFont: "Tilt Neon", sans-serif;
-  --bodyFont: "Dosis", sans-serif;
+  /* --bodyFont: "Dosis", sans-serif; */
+  --bodyFont: "Poppins", sans-serif;
 
-  --font-body-xl: 2.75rem;
-  --font-body-l: 1.3rem;
-  --font-body: 1.15rem;
-  --font-body-s: 1rem;
+  --font-body-xl: 3rem;
+  --font-body-l: 1.75rem;
+  --font-body-m: 1.15rem;
+  --font-body-s: 1.08rem;
+  --font-body-xs: 1rem;
+  --font-body-xxs: 0.85rem;
 
   --color-background: #222831;
 
@@ -29,7 +32,7 @@
 body,
 html {
   font-family: var(--bodyFont);
-  font-size: var(--font-body);
+  font-size: var(--font-body-m);
   color: var(--color-on-surface-0);
   background: var(--color-background);
   margin: 0;
@@ -98,7 +101,7 @@ video {
 }
 
 main {
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 ol,
@@ -130,12 +133,14 @@ a {
   font-weight: normal;
   line-height: 1.75rem;
   margin-top: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .intro p {
   line-height: 1.5;
   max-width: 20rem;
   color: var(--color-on-surface-2);
+  font-size: var(--font-body-s);
 }
 
 nav {
@@ -215,6 +220,7 @@ nav li a.active span:nth-child(2) {
 
 #about p {
   margin-bottom: 1rem;
+  font-size: var(--font-body-xs);
 }
 
 #experience {
@@ -230,7 +236,7 @@ nav li a.active span:nth-child(2) {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: var(--font-body-xxs);
   line-height: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -241,12 +247,12 @@ nav li a.active span:nth-child(2) {
   display: inline-flex;
   line-height: 1.25;
   font-weight: 500;
-  font-size: var(--font-body);
+  font-size: var(--font-body-m);
 }
 
 #experience .details .job-description {
   line-height: 1.5;
-  font-size: var(--font-body-s);
+  font-size: var(--font-body-xs);
   margin-top: 0.5rem;
   color: var(--color-on-surface-2);
 }
@@ -262,7 +268,7 @@ nav li a.active span:nth-child(2) {
 }
 
 #projects li .project-topic {
-  font-size: var(--font-body);
+  font-size: var(--font-body-m);
   line-height: 1.25;
   font-weight: 500;
   align-items: baseline;
@@ -270,7 +276,7 @@ nav li a.active span:nth-child(2) {
 
 #projects li .project-description {
   line-height: 1.5;
-  font-size: var(--font-body-s);
+  font-size: var(--font-body-xs);
   margin-top: 0.5rem;
   color: var(--color-on-surface-2);
 }
@@ -292,12 +298,28 @@ nav li a.active span:nth-child(2) {
   border-width: 0;
 }
 
+footer p {
+  padding-top: 2rem;
+  font-size: 0.775rem;
+  line-height: 1.25rem;
+}
+
 @media screen and (max-width: 639px) {
+  #experience,
+  #projects {
+    scroll-margin-top: 1rem;
+  }
+
+  #experience .date {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   #projects li {
     display: inline-flex;
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.8rem;
   }
 
   #projects li .featured-img {
@@ -307,6 +329,11 @@ nav li a.active span:nth-child(2) {
 }
 
 @media screen and (min-width: 639px) {
+  #experience,
+  #projects {
+    scroll-margin-top: 2rem;
+  }
+
   #experience li {
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 2rem;
@@ -356,7 +383,7 @@ nav li a.active span:nth-child(2) {
 
   #experience {
     scroll-margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   #experience li {
@@ -364,7 +391,7 @@ nav li a.active span:nth-child(2) {
   }
 
   #projects {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 4rem;
     margin-bottom: 4rem;
   }
 
@@ -410,7 +437,7 @@ nav li a.active span:nth-child(2) {
 
   #about {
     scroll-margin-top: 6rem;
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
   }
 
   #about h2,
@@ -420,12 +447,12 @@ nav li a.active span:nth-child(2) {
   }
 
   #experience {
-    scroll-margin-top: 6rem;
-    margin-bottom: 9rem;
+    scroll-margin-top: 4rem;
+    margin-bottom: 6rem;
   }
 
   #projects {
-    scroll-margin-top: 6rem;
-    margin-bottom: 9rem;
+    scroll-margin-top: 4rem;
+    margin-bottom: 6rem;
   }
 }
