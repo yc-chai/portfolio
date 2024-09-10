@@ -7,7 +7,6 @@
 
 :root {
   --titleFont: "Tilt Neon", sans-serif;
-  /* --bodyFont: "Dosis", sans-serif; */
   --bodyFont: "Poppins", sans-serif;
 
   --font-body-xl: 3rem;
@@ -41,19 +40,7 @@ html {
   scroll-behavior: smooth;
 }
 
-blockquote,
-dd,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-pre {
+* {
   margin: 0;
 }
 
@@ -200,9 +187,7 @@ nav li a.active span:nth-child(2) {
   fill: currentColor;
 }
 
-#about h2,
-#experience h2,
-#projects h2 {
+.nav-header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
@@ -213,26 +198,25 @@ nav li a.active span:nth-child(2) {
   text-decoration: underline;
 }
 
-#about {
-  scroll-margin-top: 4rem;
+.main-section {
   margin-bottom: 4rem;
 }
 
-#about p {
+.main-section.about {
+  scroll-margin-top: 4rem;
+}
+
+.description.about * {
   margin-bottom: 1rem;
   font-size: var(--font-body-xs);
 }
 
-#experience {
-  margin-bottom: 4rem;
-}
-
-#experience li {
+.list li {
   margin-bottom: 3rem;
   display: grid;
 }
 
-#experience .date {
+.experience .date {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -242,7 +226,7 @@ nav li a.active span:nth-child(2) {
   margin-bottom: 0.5rem;
 }
 
-#experience .details .position {
+.experience .details .position {
   align-items: baseline;
   display: inline-flex;
   line-height: 1.25;
@@ -250,38 +234,32 @@ nav li a.active span:nth-child(2) {
   font-size: var(--font-body-m);
 }
 
-#experience .details .job-description {
+.experience .details .job-description {
   line-height: 1.5;
   font-size: var(--font-body-xs);
   margin-top: 0.5rem;
   color: var(--color-on-surface-2);
 }
 
-#projects {
-  margin-bottom: 4rem;
-}
-
-#projects li {
-  margin-bottom: 3rem;
-  display: grid;
+.list.projects li {
   position: relative;
 }
 
-#projects li .project-topic {
+.projects li .project-topic {
   font-size: var(--font-body-m);
   line-height: 1.25;
   font-weight: 500;
   align-items: baseline;
 }
 
-#projects li .project-description {
+.projects li .project-description {
   line-height: 1.5;
   font-size: var(--font-body-xs);
   margin-top: 0.5rem;
   color: var(--color-on-surface-2);
 }
 
-#projects li .featured-img {
+.projects li .featured-img {
   border-width: 2px;
   border-radius: 0.25rem;
 }
@@ -305,59 +283,54 @@ footer p {
 }
 
 @media screen and (max-width: 639px) {
-  #experience,
-  #projects {
+  .main-section.experience,
+  .main-section.projects {
     scroll-margin-top: 1rem;
   }
 
-  #experience .date {
+  .experience .date {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  #projects li {
+  .list.projects li {
     display: inline-flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 0.8rem;
   }
 
-  #projects li .featured-img {
+  .projects li .featured-img {
     max-width: 50%;
     max-height: 10rem;
   }
 }
 
 @media screen and (min-width: 639px) {
-  #experience,
-  #projects {
+  .main-section.experience,
+  .main-section.projects {
     scroll-margin-top: 2rem;
   }
 
-  #experience li {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+  .list li {
     gap: 2rem;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
-  #experience .date {
+  .experience .date {
     grid-column: span 2 / span 2;
   }
 
-  #experience .details {
+  .experience .details {
     grid-column: span 6 / span 6;
   }
 
-  #projects li {
-    gap: 2rem;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  #projects li .details {
+  .projects li .details {
     grid-column: span 6 / span 6;
     order: 2;
   }
 
-  #projects li .featured-img {
+  .projects li .featured-img {
     grid-column: span 2 / span 2;
     order: 1;
   }
@@ -368,35 +341,28 @@ footer p {
     padding: 5rem 3rem;
   }
 
-  #about h2,
-  #experience h2,
-  #projects h2 {
+  .nav-header {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: -3rem;
     margin-right: -3rem;
   }
 
-  #about {
+  .main-section.about {
     scroll-margin-top: 6rem;
   }
 
-  #experience {
+  .main-section.experience,
+  .main-section.projects {
     scroll-margin-top: 4rem;
     margin-bottom: 4rem;
   }
 
-  #experience li {
+  .list li {
     gap: 1rem;
   }
 
-  #projects {
-    scroll-margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  #projects li {
-    gap: 1rem;
+  .list.projects li {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 }
@@ -435,23 +401,17 @@ footer p {
     width: 50%;
   }
 
-  #about {
+  .main-section.about {
     scroll-margin-top: 6rem;
     margin-bottom: 6rem;
   }
 
-  #about h2,
-  #experience h2,
-  #projects h2 {
+  .nav-header {
     display: none;
   }
 
-  #experience {
-    scroll-margin-top: 4rem;
-    margin-bottom: 6rem;
-  }
-
-  #projects {
+  .main-section.experience,
+  .main-section.projects {
     scroll-margin-top: 4rem;
     margin-bottom: 6rem;
   }
