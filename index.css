@@ -9,12 +9,12 @@
   --titleFont: "Tilt Neon", sans-serif;
   --bodyFont: "Poppins", sans-serif;
 
-  --font-body-xl: 3rem;
+  --font-body-xl: 3.5rem;
   --font-body-l: 1.75rem;
   --font-body-m: 1.15rem;
-  --font-body-s: 1.08rem;
-  --font-body-xs: 1rem;
-  --font-body-xxs: 0.85rem;
+  --font-body-s: 1rem;
+  --font-body-xs: 0.9rem;
+  --font-body-xxs: 0.8rem;
 
   --color-background: #222831;
 
@@ -102,6 +102,15 @@ ul {
 a {
   text-decoration: none;
   color: var(--color-on-surface-0);
+}
+
+.error-msg a {
+  text-decoration: underline;
+}
+
+.error-msg a:hover {
+  color: var(--color-on-background-variant);
+  text-decoration: none;
 }
 
 .intro {
@@ -226,7 +235,7 @@ nav li a.active span:nth-child(2) {
 
 .description.about * {
   margin-bottom: 1rem;
-  font-size: var(--font-body-xs);
+  font-size: var(--font-body-s);
 }
 
 .list li {
@@ -307,6 +316,25 @@ footer p {
   line-height: 1.25rem;
 }
 
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  min-height: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 639px) {
   .main-section.experience,
   .main-section.projects {
@@ -362,7 +390,7 @@ footer p {
     grid-column: span 6 / span 6;
   }
 
-  .projects li .details {
+  .projects li a.project-link {
     -ms-grid-column-span: 6;
     grid-column: span 6 / span 6;
     -webkit-box-ordinal-group: 3;
@@ -406,14 +434,18 @@ footer p {
   }
 
   .list.projects li {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-    -ms-grid-columns: (minmax(0, 1fr)) [8];
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    -ms-grid-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 1023px) {
   header nav {
     display: none;
+  }
+
+  .intro p {
+    max-width: unset;
   }
 }
 

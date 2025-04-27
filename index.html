@@ -19,6 +19,14 @@
 
     <script defer src="index.js"></script>
 
+    <link
+      href="content.json"
+      rel="preload"
+      as="fetch"
+      type="application/json"
+      crossorigin="anonymous"
+    />
+
     <title>Portfolio Website</title>
   </head>
 
@@ -27,201 +35,78 @@
       <div class="content">
         <header>
           <div>
+            <!-- Hero Section -->
             <div class="intro">
-              <h1>Yong Chen</h1>
-              <h2>Junior Full Stack Developer</h2>
-              <p>
+              <h1 id="hero-name">Yong Chen</h1>
+              <h2 id="hero-title">Junior Full Stack Developer</h2>
+              <p id="hero-description">
                 I build applications from start to finish, turning ideas into
                 solutions.
               </p>
             </div>
 
+            <!-- Navigation -->
             <nav>
               <ul>
                 <li>
-                  <a href="#about" class="nav-link active">
-                    <span></span>
-                    <span>ABOUT</span>
-                  </a>
+                  <a href="#about" class="nav-link active"
+                    ><span></span><span>ABOUT</span></a
+                  >
                 </li>
                 <li>
-                  <a href="#experience" class="nav-link">
-                    <span></span>
-                    <span>EXPERIENCE</span>
-                  </a>
+                  <a href="#experience" class="nav-link"
+                    ><span></span><span>EXPERIENCE</span></a
+                  >
                 </li>
                 <li>
-                  <a href="#projects" class="nav-link">
-                    <span></span>
-                    <span>PROJECTS</span>
-                  </a>
+                  <a href="#projects" class="nav-link"
+                    ><span></span><span>PROJECTS</span></a
+                  >
                 </li>
               </ul>
             </nav>
           </div>
 
+          <!-- Social Media Links -->
           <div class="social-media-list">
-            <ul>
+            <ul id="social-links">
               <li>
-                <a href="https://github.com/yc-chai" target="_blank">
-                  <span class="sr-only">Github</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 16 16"
-                    class="social-media"
-                  >
-                    <title>GitHub</title>
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                    ></path>
-                  </svg>
-                </a>
+                <div class="skeleton" style="width: 40px; height: 40px"></div>
               </li>
               <li>
-                <a href="https://linkedin.com/in/yongchen-chai" target="_blank">
-                  <span class="sr-only">LinkedIn</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    class="social-media"
-                  >
-                    <title>LinkedIn</title>
-                    <path
-                      d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
-                    ></path>
-                  </svg>
-                </a>
+                <div class="skeleton" style="width: 40px; height: 40px"></div>
               </li>
             </ul>
           </div>
         </header>
 
         <main>
+          <!-- About -->
           <section id="about" class="main-section about">
             <div>
-              <div>
-                <h2 class="nav-header">About</h2>
-              </div>
-              <div class="description about">
-                <p>
-                  I used to be a marine truck driver and thought I would stay in
-                  that role for life. However, the COVID-19 pandemic in 2020
-                  challenged everyone, including me. During a period of forced
-                  leave, I applied to Republic Polytechnic and enrolled. From
-                  the start, I discovered deep passion for IT technologies and
-                  programming, eager to understand the techniques behind
-                  application development and algorithms. This passion has
-                  brought me to where I am today.
-                </p>
-                <p>
-                  My main focus these day is providing solutions and
-                  demonstrations for potential customer at Oracle. I most enjoy
-                  addressing client pain points by building well-designed and
-                  highly extensible applications. In my free time, I explore new
-                  technologies and tools through small experiments from websites
-                  to enhance my career skillset.
-                </p>
-                <p>
-                  Currently, I plan to further my studies with the goal of
-                  becoming a full stack developer. I am seeking opportunities to
-                  broaden my horizons and gain experience and skills, both
-                  through university and beyond. Let's find out how I can solve
-                  your pain points.
-                </p>
-              </div>
+              <div><h2 class="nav-header">About</h2></div>
+              <div class="description about" id="about-content"></div>
             </div>
           </section>
 
+          <!-- Experience -->
           <section id="experience" class="main-section experience">
             <div>
-              <div>
-                <h2 class="nav-header">Experience</h2>
-              </div>
-              <ol class="list experience">
-                <li>
-                  <div class="date">2024 - Present</div>
-
-                  <div class="details">
-                    <h3 class="position">
-                      <span> Solution Engineer, Oracle </span>
-                    </h3>
-
-                    <p class="job-description">To Be Continued...</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="date">2023 - 2024</div>
-
-                  <div class="details">
-                    <h3 class="position">
-                      <span> Back-end Developer Intern, Oracle </span>
-                    </h3>
-
-                    <p class="job-description">
-                      Managed and optimized databases to enhance application
-                      performance. Work closely with cross-functional teams,
-                      including front-end developers, designers, and product
-                      managers, to implement and advocate for best practices in
-                      web accessibility.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="date">2021 - 2024</div>
-
-                  <div class="details">
-                    <h3 class="position">
-                      <span>
-                        Diploma Information Technology, Republic Polytechnic
-                      </span>
-                    </h3>
-
-                    <p class="job-description">
-                      Gained foundational IT knowledge and skills, fueling my
-                      passion for technology. Collaborated on various IT
-                      projects with teams and established valuable industry
-                      connections, which led to internship opportunities.
-                    </p>
-                  </div>
-                </li>
-              </ol>
+              <div><h2 class="nav-header">Experience</h2></div>
+              <ol class="list experience" id="experience-list"></ol>
             </div>
           </section>
 
-          <!-- <section id="projects" class="main-section projects">
+          <!-- Projects -->
+          <section id="projects" class="main-section projects">
             <div>
-              <div>
-                <h2 class="nav-header">Projects</h2>
-              </div>
-              <ul class="list projects">
-                <li>
-                  <div class="details">
-                    <h3 class="project-topic">Build a Spotify Connected</h3>
-                    <p class="project-description">
-                      Video course that teaches how to build a web app with the
-                      Spotify Web API. Topics covered include the principles of
-                      REST APIs, user auth flows, Node, Express, React, Styled
-                      Components, and more.
-                    </p>
-                  </div>
-
-                  <img
-                    src="./img/sample-img.jpg"
-                    alt="sample-img1"
-                    class="featured-img"
-                  />
-                </li>
-              </ul>
+              <div><h2 class="nav-header">Projects</h2></div>
+              <ul class="list projects" id="projects-list"></ul>
             </div>
-          </section> -->
+          </section>
 
           <footer>
-            <p>
-              © 2024 Yong Chen's portfolio. All rights reserved. The design
-              structure of this website is inspired by the work of Brittany
-              Chiang and is used in accordance with their open source policy.
-              The content are created and owned by Yong Chen.
-            </p>
+            <p>© 2025 Yong Chen's portfolio. All rights reserved.</p>
           </footer>
         </main>
       </div>
