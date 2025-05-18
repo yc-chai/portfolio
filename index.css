@@ -24,8 +24,11 @@
   --color-on-surface-3: #898989;
   --color-on-surface-4: #777777;
 
-  --color-background-variant: #393e46;
-  --color-on-background-variant: #00adb5;
+  /* --color-background-variant: #2dd4be15; */
+  /* --color-on-background-variant: #5eead4; */
+
+  --color-background-variant: #4fa29715;
+  --color-on-background-variant: #9acec6;
 }
 
 body,
@@ -176,7 +179,8 @@ nav li a span:first-child {
   transition-duration: 0.15s;
 }
 
-nav li a.active span:first-child {
+nav li a.active span:first-child,
+nav li a:hover span:first-child {
   width: 4rem;
   background-color: var(--color-on-surface-1);
 }
@@ -185,7 +189,8 @@ nav li a span:nth-child(2) {
   color: var(--color-on-surface-4);
 }
 
-nav li a.active span:nth-child(2) {
+nav li a.active span:nth-child(2),
+nav li a:hover span:nth-child(2) {
   color: var(--color-on-surface-1);
 }
 
@@ -242,6 +247,31 @@ nav li a.active span:nth-child(2) {
   margin-bottom: 3rem;
   display: -ms-grid;
   display: grid;
+}
+
+.list.about.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.list.about.skills li {
+  display: inherit;
+  margin-top: 0.5rem;
+  margin-right: 0.375rem;
+  margin-bottom: unset;
+}
+
+.list.about.skills li .skill {
+  color: var(--color-on-background-variant);
+  background-color: var(--color-background-variant);
+  font-size: var(--font-body-xxs);
+  line-height: 1.25rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  align-items: center;
+  display: flex;
 }
 
 .experience .date {

@@ -46,6 +46,7 @@ async function loadContent() {
 function renderContent(data) {
   renderSocialLinks(data.socials);
   renderAboutSection(data.about);
+  renderSkillsSection(data.skills);
   renderExperienceSection(data.experience);
   renderProjectsSection(data.projects);
 }
@@ -76,6 +77,18 @@ function renderSocialLinks(links) {
 function renderAboutSection(about) {
   const container = document.querySelector(".description.about");
   container.innerHTML = about.map((para) => `<p>${para}</p>`).join("");
+}
+
+// Render skills section
+function renderSkillsSection(skills) {
+  const container = document.querySelector(".list.skills");
+  container.innerHTML = skills
+    .map(
+      (skill) => `
+      <li>
+        <div class="skill">${skill}</div></li>`
+    )
+    .join("");
 }
 
 // Render experience section

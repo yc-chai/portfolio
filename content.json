@@ -19,30 +19,34 @@
     "I thrive in dynamic environments where I can continuously grow, solve complex problems, and build software that stands the test of time.",
     "Outside of work, I enjoy investing, playing chess, and constantly seeking opportunities to grow both personally and professionally."
   ],
+  "skills": [
+    "Java",
+    "Python",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "SQL",
+    "RESTful APIs",
+    "OCI"
+  ],
   "experience": [
     {
-      "duration": "Jul 2024 - Jun 2025",
+      "duration": "2024 - 2025",
       "role": "Associate Solution Engineer",
       "company": "Oracle",
-      "description": "To Be Continued..."
+      "description": "Design and implement low-code web applications and integrated data solutions using Oracle technologies with a focus on APEX and cloud infrastructure. Develop proofs of concept demonstrating the embedding of Oracle Analytics Cloud into applications and real-time data streaming between Kafka and Oracle Data Warehouse. Collaborate with sales and engineering teams to architect database and integration solutions that address specific technical requirements. Optimize development efficiency by creating reusable solution components to accelerate delivery timelines for similar business needs."
     },
     {
-      "duration": "Apr 2023 - Mar 2024",
+      "duration": "2023 - 2024",
       "role": "Back-end Developer Intern",
       "company": "Oracle",
-      "description": "Managed and optimized databases to enhance application performance. Work closely with cross-functional teams, including front-end developers, designers, and product managers, to implement and advocate for best practices in web accessibility."
-    },
-    {
-      "duration": "2021 - 2024",
-      "role": "Diploma Information Technology",
-      "company": "Republic Polytechnic",
-      "description": "Gained foundational IT knowledge and skills, fueling my passion for technology. Collaborated on various IT projects with teams and established valuable industry connections, which led to internship opportunities."
+      "description": "Designed and deployed Oracle APEX applications, architecting efficient data model (PL/SQL) and optimizing RESTful API integrations to improve front-end performance by 30%. Utilized Javascript for APEX-built-in APIs and AJAX callbacks to streamline server-side data operations. Automated manual testing and data validation tasks using Selenium Python, cutting operational workload by 65%. Managed version control and collaborative development directly within Oracle APEX, ensuring code integrity and team alignment."
     }
   ],
   "projects": [
     {
       "topic": "Singapore Jogging Spots Application",
-      "description": "",
+      "description": "Helloß",
       "link": "https://github.com/yc-chai/rp-project-jogging-spots-app"
     }
   ]
