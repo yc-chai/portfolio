@@ -116,12 +116,11 @@ function renderProjectsSection(projects) {
     .map(
       (proj) => `
         <li>
-          <a href="${proj.link}" target="_blank" class="project-link">
-            <div class="details">
-              <h3 class="project-topic">${proj.topic}</h3>
-              <p class="project-description">${proj.description}</p>
-            </div>
-          </a>
+          <a href="${proj.link}" target="_blank" class="project-link"></a>
+          <div class="details">
+            <h3 class="project-topic">${proj.topic}</h3>
+            <p class="project-description">${proj.description}</p>
+          </div>
         </li>
       `
     )

@@ -9,9 +9,9 @@
   --titleFont: "Tilt Neon", sans-serif;
   --bodyFont: "Poppins", sans-serif;
 
-  --font-body-xl: 3.5rem;
-  --font-body-l: 1.75rem;
-  --font-body-m: 1.15rem;
+  --font-body-xl: 2.5rem;
+  --font-body-l: 1.5rem;
+  --font-body-m: 1.05rem;
   --font-body-s: 1rem;
   --font-body-xs: 0.9rem;
   --font-body-xxs: 0.8rem;
@@ -307,6 +307,23 @@ nav li a:hover span:nth-child(2) {
   position: relative;
 }
 
+.list.projects li .project-link {
+  position: absolute;
+  display: block;
+  z-index: 0;
+  left: -1.5rem;
+  right: -1.5rem;
+  top: -1rem;
+  bottom: -1rem;
+}
+
+.list.projects li:hover .project-topic {
+  color: var(--color-on-background-variant);
+}
+.list.projects li:hover .project-link {
+  background-color: var(--color-background-variant);
+}
+
 .projects li .project-topic {
   font-size: var(--font-body-m);
   line-height: 1.25;
@@ -420,9 +437,9 @@ footer p {
     grid-column: span 6 / span 6;
   }
 
-  .projects li a.project-link {
-    -ms-grid-column-span: 6;
-    grid-column: span 6 / span 6;
+  .projects li .details {
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -438,6 +455,15 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  :root {
+    --font-body-xl: 3.5rem;
+    --font-body-l: 1.75rem;
+    --font-body-m: 1.15rem;
+    --font-body-s: 1rem;
+    --font-body-xs: 0.9rem;
+    --font-body-xxs: 0.8rem;
+  }
+
   .frame {
     padding: 5rem 3rem;
   }

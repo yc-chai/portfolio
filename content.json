@@ -46,8 +46,13 @@
   "projects": [
     {
       "topic": "Singapore Jogging Spots Application",
-      "description": "Helloß",
+      "description": "JavaFX application to manage jogging spots, with MySQL backend and CRUD functionality. Users filter locations by category (e.g., parks, stadiums) and modify data via a graphical interface.",
       "link": "https://github.com/yc-chai/rp-project-jogging-spots-app"
+    },
+    {
+      "topic": "Hotel Management System (Java Console App) ",
+      "description": "Java console application for hotel administration, featuring room inventory management, dynamic pricing updates, member registration, reservation handling, revenue analytics, and promotional lucky draws—all via a command-line interface.",
+      "link": "https://github.com/yc-chai/rp-project-hotel-management"
     }
   ]
 }
