@@ -414,6 +414,15 @@ footer p {
 }
 
 @media screen and (min-width: 639px) {
+  :root {
+    --font-body-xl: 3rem;
+    --font-body-l: 1.6rem;
+    --font-body-m: 1.15rem;
+    --font-body-s: 1rem;
+    --font-body-xs: 0.9rem;
+    --font-body-xxs: 0.8rem;
+  }
+
   .main-section.experience,
   .main-section.projects {
     scroll-margin-top: 2rem;
