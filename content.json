@@ -23,24 +23,42 @@
     "Java",
     "Python",
     "JavaScript",
-    "HTML",
-    "CSS",
-    "SQL",
-    "RESTful APIs",
-    "OCI"
+    "HTML/CSS",
+    "MySQL",
+    "PL/SQL",
+    "Oracle Cloud Infrastructure (OCI)",
+    "Docker",
+    "Selenium Python",
+    "Oracle APEX",
+    "Kafka",
+    "Cisco Networking",
+    "Oracle DB"
   ],
   "experience": [
     {
       "duration": "2024 - 2025",
       "role": "Associate Solution Engineer",
       "company": "Oracle",
-      "description": "Design and implement low-code web applications and integrated data solutions using Oracle technologies with a focus on APEX and cloud infrastructure. Develop proofs of concept demonstrating the embedding of Oracle Analytics Cloud into applications and real-time data streaming between Kafka and Oracle Data Warehouse. Collaborate with sales and engineering teams to architect database and integration solutions that address specific technical requirements. Optimize development efficiency by creating reusable solution components to accelerate delivery timelines for similar business needs."
+      "description": "Design and implement low-code web applications and integrated data solutions using Oracle technologies with a focus on APEX and cloud infrastructure. Develop proofs of concept demonstrating the embedding of Oracle Analytics Cloud into applications and real-time data streaming between Kafka and Oracle Data Warehouse. Collaborate with sales and engineering teams to architect database and integration solutions that address specific technical requirements. Optimize development efficiency by creating reusable solution components to accelerate delivery timelines for similar business needs.",
+      "keywords": [
+        "APEX",
+        "cloud infrastructure",
+        "Oracle Data Warehouse",
+        "Kafka"
+      ]
     },
     {
       "duration": "2023 - 2024",
       "role": "Back-end Developer Intern",
       "company": "Oracle",
-      "description": "Designed and deployed Oracle APEX applications, architecting efficient data model (PL/SQL) and optimizing RESTful API integrations to improve front-end performance by 30%. Utilized Javascript for APEX-built-in APIs and AJAX callbacks to streamline server-side data operations. Automated manual testing and data validation tasks using Selenium Python, cutting operational workload by 65%. Managed version control and collaborative development directly within Oracle APEX, ensuring code integrity and team alignment."
+      "description": "Designed and deployed Oracle APEX applications, architecting efficient data model (PL/SQL) and optimizing RESTful API integrations to improve front-end performance by 30%. Utilized Javascript for APEX-built-in APIs and AJAX callbacks to streamline server-side data operations. Automated manual testing and data validation tasks using Selenium Python, cutting operational workload by 65%. Managed version control and collaborative development directly within Oracle APEX, ensuring code integrity and team alignment.",
+      "keywords": [
+        "Oracle APEX",
+        "PL/SQL",
+        "RESTful API",
+        "JavaScript",
+        "Selenium Python"
+      ]
     }
   ],
   "projects": [

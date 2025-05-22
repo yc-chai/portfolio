@@ -28,7 +28,8 @@
   /* --color-on-background-variant: #5eead4; */
 
   --color-background-variant: #4fa29715;
-  --color-on-background-variant: #9acec6;
+  /* --color-on-background-variant: #9acec6; */
+  --color-on-background-variant: #81ead0;
 }
 
 body,
@@ -105,6 +106,20 @@ ul {
 a {
   text-decoration: none;
   color: var(--color-on-surface-0);
+}
+
+.error-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .error-msg a {
@@ -219,6 +234,10 @@ nav li a:hover span:nth-child(2) {
   fill: currentColor;
 }
 
+.social-media:hover {
+  color: var(--color-on-background-variant);
+}
+
 .nav-header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -232,6 +251,19 @@ nav li a:hover span:nth-child(2) {
 
 .main-section {
   margin-bottom: 4rem;
+}
+
+.inline-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.inline-icon svg {
+  color: var(--color-on-surface-0);
+  fill: currentColor;
+  width: 10.605px;
+  height: 15.555px;
 }
 
 .main-section.about {
@@ -317,9 +349,16 @@ nav li a:hover span:nth-child(2) {
   bottom: -1rem;
 }
 
-.list.projects li:hover .project-topic {
+.list.projects li:hover .project-topic,
+.list.projects li:hover .inline-icon svg {
   color: var(--color-on-background-variant);
 }
+
+.list.projects li:hover .inline-icon svg {
+  transform: translate(0.5rem, 0);
+  transition-duration: 300ms;
+}
+
 .list.projects li:hover .project-link {
   background-color: var(--color-background-variant);
 }
@@ -368,6 +407,11 @@ footer p {
   border-radius: 4px;
   min-height: 20px;
   animation: pulse 1.5s infinite;
+}
+
+.highlight-keyword {
+  color: var(--color-on-background-variant);
+  font-weight: bold;
 }
 
 @keyframes pulse {

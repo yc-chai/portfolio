@@ -91,21 +91,47 @@ function renderSkillsSection(skills) {
     .join("");
 }
 
-// Render experience section
+// // Render experience section
+// function renderExperienceSection(experiences) {
+//   const container = document.querySelector(".list.experience");
+//   container.innerHTML = experiences
+//     .map(
+//       (exp) => `
+//         <li>
+//           <div class="date">${exp.duration}</div>
+//           <div class="details">
+//             <h3 class="position"><span>${exp.role}, ${exp.company}</span></h3>
+//             <p class="job-description">${exp.description}</p>
+//           </div>
+//         </li>
+//       `
+//     )
+//     .join("");
+// }
+
 function renderExperienceSection(experiences) {
   const container = document.querySelector(".list.experience");
   container.innerHTML = experiences
-    .map(
-      (exp) => `
+    .map((exp) => {
+      let formattedDescription = exp.description;
+      exp.keywords.forEach((keyword) => {
+        const regex = new RegExp(`\\b(${keyword})\\b`, "gi");
+        formattedDescription = formattedDescription.replace(
+          regex,
+          `<span class="highlight-keyword">$1</span>`
+        );
+      });
+
+      return `
         <li>
           <div class="date">${exp.duration}</div>
           <div class="details">
             <h3 class="position"><span>${exp.role}, ${exp.company}</span></h3>
-            <p class="job-description">${exp.description}</p>
+            <p class="job-description">${formattedDescription}</p>
           </div>
         </li>
-      `
-    )
+      `;
+    })
     .join("");
 }
 
@@ -118,7 +144,10 @@ function renderProjectsSection(projects) {
         <li>
           <a href="${proj.link}" target="_blank" class="project-link"></a>
           <div class="details">
-            <h3 class="project-topic">${proj.topic}</h3>
+            <span class="inline-icon">
+              <svg xmlns="http://www.w3.org/2000/svg"><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
+              <h3 class="project-topic">${proj.topic}</h3>
+            </span>
             <p class="project-description">${proj.description}</p>
           </div>
         </li>
@@ -129,13 +158,11 @@ function renderProjectsSection(projects) {
 
 // Show error fallback UI
 function showError(error) {
-  console.error(error);
   const content = document.querySelector(".content");
-  content.innerHTML = `
-    <div class="error-msg" style="text-align: center; margin: auto;">
-      <p>Failed to load content. Please try refreshing or contact <a href="mailto:yongchen99.work@gmail.com">yongchen99.work@gmail.com</a></p>
-    </div>
-  `;
+  content.innerHTML = ``;
+
+  const errorContent = document.querySelector(".error-container");
+  errorContent.style.display = "flex";
 }
 
 // ==========================
