@@ -13,7 +13,7 @@ function setupScrollSpy() {
 
   window.addEventListener("scroll", () => {
     sectionEls.forEach((sectionEl) => {
-      if (window.scrollY >= sectionEl.offsetTop - sectionEl.clientHeight / 5) {
+      if (window.scrollY >= sectionEl.offsetTop - sectionEl.clientHeight / 3) {
         currentSection = sectionEl.id;
       }
     });
