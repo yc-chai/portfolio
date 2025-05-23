@@ -253,17 +253,36 @@ nav li a:hover span:nth-child(2) {
   margin-bottom: 4rem;
 }
 
-.inline-icon {
+.projects .inline-icon {
   display: flex;
   align-items: center;
   column-gap: 1rem;
 }
 
-.inline-icon svg {
+svg.bold-right-arrow {
   color: var(--color-on-surface-0);
   fill: currentColor;
   width: 10.605px;
   height: 15.555px;
+}
+
+.resume {
+  width: fit-content;
+}
+
+.resume .inline-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+
+svg.right-up-arrow {
+  color: var(--color-on-surface-0);
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
 }
 
 .main-section.about {
@@ -333,6 +352,17 @@ nav li a:hover span:nth-child(2) {
   font-size: var(--font-body-xs);
   margin-top: 0.5rem;
   color: var(--color-on-surface-2);
+}
+
+.resume:hover .inline-icon,
+.resume:hover .inline-icon svg {
+  color: var(--color-on-background-variant);
+  text-decoration: underline;
+}
+
+.resume:hover .inline-icon svg {
+  transform: translate(0.1rem, -0.1rem);
+  transition-duration: 300ms;
 }
 
 .list.projects li {
