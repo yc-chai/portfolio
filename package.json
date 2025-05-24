@@ -11,5 +11,11 @@
     "globals": "^16.1.0",
     "imagemin-cli": "^3.0.0",
     "prettier": "^3.5.3"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "no-descending-specificity": null
+    }
   }
 }

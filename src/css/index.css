@@ -7,7 +7,7 @@
 
 :root {
   --titleFont: "Tilt Neon", sans-serif;
-  --bodyFont: "Poppins", sans-serif;
+  --body-font: "Poppins", sans-serif;
 
   --font-body-xl: 2.5rem;
   --font-body-l: 1.5rem;
@@ -34,7 +34,7 @@
 
 body,
 html {
-  font-family: var(--bodyFont);
+  font-family: var(--body-font);
   font-size: var(--font-body-m);
   color: var(--color-on-surface-0);
   background: var(--color-background);
@@ -129,7 +129,6 @@ a {
 
 .error-msg {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -184,7 +183,7 @@ nav {
   color: var(--color-on-surface-0);
 }
 
-nav li a {
+.nav-link {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   letter-spacing: 0.1em;
@@ -192,11 +191,10 @@ nav li a {
   -ms-flex-align: center;
   align-items: center;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-nav li a span:first-child {
+.nav-link span:first-child {
   background-color: var(--color-on-surface-4);
   width: 2rem;
   height: 1px;
@@ -212,18 +210,18 @@ nav li a span:first-child {
   transition-duration: 0.15s;
 }
 
-nav li a.active span:first-child,
-nav li a:hover span:first-child {
+.nav-link.active span:first-child,
+.nav-link:hover span:first-child {
   width: 4rem;
   background-color: var(--color-on-surface-1);
 }
 
-nav li a span:nth-child(2) {
+.nav-link span:nth-child(2) {
   color: var(--color-on-surface-4);
 }
 
-nav li a.active span:nth-child(2),
-nav li a:hover span:nth-child(2) {
+.nav-link.active span:nth-child(2),
+.nav-link:hover span:nth-child(2) {
   color: var(--color-on-surface-1);
 }
 
@@ -232,7 +230,6 @@ nav li a:hover span:nth-child(2) {
   -ms-flex-align: center;
   align-items: center;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 2rem;
 }
@@ -271,7 +268,6 @@ nav li a:hover span:nth-child(2) {
 
 .projects .inline-icon {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -296,7 +292,6 @@ svg.bold-right-arrow {
 
 .resume .inline-icon {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -332,7 +327,6 @@ svg.right-up-arrow {
 
 .list.about.skills {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -358,7 +352,6 @@ svg.right-up-arrow {
   -ms-flex-align: center;
   align-items: center;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -521,7 +514,6 @@ footer p {
 
 .about-website-content .description {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -704,7 +696,6 @@ footer p {
 
   .content {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 1rem;
     -webkit-box-pack: justify;
@@ -723,7 +714,6 @@ footer p {
     width: 50%;
     max-height: 100vh;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: sticky;
     padding: 6rem 0;
