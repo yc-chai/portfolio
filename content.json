@@ -4,19 +4,34 @@
       "platform": "GitHub",
       "url": "https://github.com/yc-chai",
       "viewBox": "0 0 16 16",
-      "svgPath": "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+      "width": "1.5rem",
+      "height": "1.5rem",
+      "svgPath": "<path d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"></path>"
     },
     {
       "platform": "LinkedIn",
       "url": "https://linkedin.com/in/yongchen-chai",
       "viewBox": "0 0 24 24",
-      "svgPath": "M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+      "width": "1.5rem",
+      "height": "1.5rem",
+      "svgPath": "<path d=\"M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z\"></path>"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:yongchen99.work@gmail.com",
+      "viewBox": "0 0 512 512",
+      "width": "1.5rem",
+      "height": "1.5rem",
+      "svgPath": "<path d=\"M512,184.3v227.1c0,13-4.7,23.3-13,32.6c-9.3,9.3-19.5,13-32.6,13H45.6c-13,0-23.3-4.7-32.6-13S0,424.5,0,411.5V184.3c8.4,9.3,17.7,17.7,28.9,25.1c68.9,46.5,116.4,80.1,142.4,98.7c11.2,8.4,19.5,14,26.1,18.6c6.5,4.7,15.8,9.3,27,14c11.2,4.7,21.4,7.4,31.7,7.4h0c9.3,0,20.5-2.8,31.7-7.4c11.2-4.7,20.5-9.3,27-14   c6.5-4.7,15.8-11.2,26.1-18.6c32.6-23.3,80.1-55.9,142.4-98.7C494.3,202,503.6,193.6,512,184.3z M512,100.5c0,14.9-4.7,29.8-14,42.8c-9.3,14-21.4,25.1-34.4,35.4c-71.7,49.3-116.4,81-134.1,93.1c-1.9,0.9-5.6,4.7-12.1,8.4c-6.5,4.7-11.2,8.4-15.8,11.2s-9.3,5.6-14.9,9.3s-11.2,5.6-16.8,7.4c-5.6,1.9-10.2,2.8-14,2.8h0c-4.7,0-9.3-0.9-14-2.8c-5.6-1.9-10.2-4.7-16.8-7.4c-5.6-3.7-11.2-6.5-14.9-9.3c-3.7-2.8-9.3-6.5-15.8-11.2s-10.2-7.4-12.1-8.4c-17.7-12.1-41.9-29.8-74.5-52.1c-32.6-22.3-52.1-36.3-58.6-41c-12.1-8.4-23.3-18.6-33.5-32.6S0,119.2,0,107.1c0-14.9,3.7-27,12.1-37.2c7.4-10.2,19.5-14.9,33.5-14.9h420.8c12.1,0,23.3,4.7,32.6,13C507.3,77.3,512,88.4,512,100.5z\"/>"
     }
   ],
   "about": [
     {
       "content": "I'm a full stack engineer early in my career, passionate about developing systems that prioritize maintainability and scalability, building robust foundations for future growth.",
-      "keywords": []
+      "keywords": [
+        { "type": "highlight", "text": "prioritize maintainability" },
+        { "type": "highlight", "text": "scalability" }
+      ]
     },
     {
       "content": "Beyond technical implementation, my favorite work lies at the intersection of design and development. I'm energized by the challenge of translating complex, evolving requirements into elegant, high-performing features that users genuinely enjoy.",
@@ -53,10 +68,10 @@
       "company": "Oracle",
       "description": "Design and implement low-code web applications and integrated data solutions using Oracle technologies with a focus on APEX and cloud infrastructure. Develop proofs of concept demonstrating the embedding of Oracle Analytics Cloud into applications and real-time data streaming between Kafka and Oracle Data Warehouse. Collaborate with sales and engineering teams to architect database and integration solutions that address specific technical requirements. Optimize development efficiency by creating reusable solution components to accelerate delivery timelines for similar business needs.",
       "keywords": [
-        "APEX",
-        "cloud infrastructure",
-        "Oracle Data Warehouse",
-        "Kafka"
+        { "type": "highlight", "text": "APEX" },
+        { "type": "highlight", "text": "cloud infrastructure" },
+        { "type": "highlight", "text": "Oracle Data Warehouse" },
+        { "type": "highlight", "text": "Kafka" }
       ]
     },
     {
@@ -65,33 +80,40 @@
       "company": "Oracle",
       "description": "Designed and deployed Oracle APEX applications, architecting efficient data model (PL/SQL) and optimizing RESTful API integrations to improve front-end performance by 30%. Utilized Javascript for APEX-built-in APIs and AJAX callbacks to streamline server-side data operations. Automated manual testing and data validation tasks using Selenium Python, cutting operational workload by 65%. Managed version control and collaborative development directly within Oracle APEX, ensuring code integrity and team alignment.",
       "keywords": [
-        "Oracle APEX",
-        "PL/SQL",
-        "RESTful API",
-        "JavaScript",
-        "Selenium Python"
+        { "type": "highlight", "text": "Oracle APEX" },
+        { "type": "highlight", "text": "PL/SQL" },
+        { "type": "highlight", "text": "RESTful API" },
+        { "type": "highlight", "text": "JavaScript" },
+        { "type": "highlight", "text": "Selenium Python" }
       ]
     }
   ],
   "projects": [
     {
       "topic": "Singapore Jogging Spots Application",
-      "description": "JavaFX application to manage jogging spots, with MySQL backend and CRUD functionality. Users filter locations by category (e.g., parks, stadiums) and modify data via a graphical interface.",
+      "description": "JavaFX application to manage jogging spots, with MySQL backend and CRUD functionality. Users filter locations by category and modify data via a graphical interface.",
       "link": "https://github.com/yc-chai/rp-project-jogging-spots-app",
-      "keywords": []
+      "keywords": [
+        { "type": "highlight", "text": "JavaFX" },
+        { "type": "highlight", "text": "MySQL" },
+        { "type": "highlight", "text": "CRUD functionality" }
+      ]
     },
     {
       "topic": "Hotel Management System (Java Console App)",
       "description": "Java console application for hotel administration, featuring room inventory management, dynamic pricing updates, member registration, reservation handling, revenue analytics, and promotional lucky draws—all via a command-line interface.",
       "link": "https://github.com/yc-chai/rp-project-hotel-management",
-      "keywords": []
+      "keywords": [{ "type": "highlight", "text": "Java console application" }]
     }
   ],
   "about_website": [
     {
       "type": "paragraph",
-      "content": "I built this portfolio completely from scratch - no templates, no frameworks. Just me, HTML, CSS and JavaScript. It's been a fun challenge to create everything myself while keeping it clean and responsive.",
-      "keywords": []
+      "content": "I built this portfolio completely from scratch. No templates. No frameworks. Just me, HTML, CSS and JavaScript. It's been a fun challenge to create everything myself while keeping it clean and responsive.",
+      "keywords": [
+        { "type": "highlight", "text": "No templates" },
+        { "type": "highlight", "text": "No frameworks" }
+      ]
     },
     {
       "type": "list",
@@ -114,7 +136,13 @@
     {
       "type": "paragraph",
       "content": "The design was inspired by portfolio I admire, but every line of code is my own. Building this taught me so much about CSS layouts and creating smooth user experiences.",
-      "keywords": []
+      "keywords": [
+        {
+          "type": "link",
+          "text": "portfolio",
+          "url": "https://brittanychiang.com/"
+        }
+      ]
     }
   ]
 }

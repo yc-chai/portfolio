@@ -52,17 +52,35 @@ function renderContent(data) {
   renderAboutWebsiteSection(data.about_website);
 }
 
-// Helper function to highlight keywords in text
-function highlightKeywords(text, keywords) {
+// Helper function to process keywords in text
+function processKeywords(text, keywords) {
   if (!keywords || keywords.length === 0) return text;
+
+  // Create a map of keywords to their replacements
+  const replacements = {};
+  keywords.forEach((keyword) => {
+    const escaped = escapeRegExp(keyword.text);
+    if (keyword.type === "link") {
+      replacements[
+        escaped
+      ] = `<a href="${keyword.url}" class="link-keyword" target="_blank">${keyword.text}</a>`;
+    } else {
+      replacements[
+        escaped
+      ] = `<span class="highlight-keyword">${keyword.text}</span>`;
+    }
+  });
 
   // Create a regex pattern that matches any of the keywords (whole words only)
   const pattern = new RegExp(
-    `\\b(${keywords.map((k) => escapeRegExp(k)).join("|")})\\b`,
+    `\\b(${Object.keys(replacements).join("|")})\\b`,
     "gi"
   );
 
-  return text.replace(pattern, '<span class="highlight-keyword">$&</span>');
+  return text.replace(
+    pattern,
+    (matched) => replacements[escapeRegExp(matched)]
+  );
 }
 
 // Helper to escape special regex characters
@@ -82,9 +100,8 @@ function renderSocialLinks(links) {
     a.target = "_blank";
     a.innerHTML = `
       <span class="sr-only">${link.platform}</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="${link.viewBox}" class="social-media">
-        <title>${link.platform}</title>
-        <path d="${link.svgPath}"></path>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="${link.viewBox}" class="social-media" width="${link.width}" height="${link.height}" style="${link.style}" ${link.svgAttr}>
+        ${link.svgPath}
       </svg>
     `;
     li.appendChild(a);
@@ -96,7 +113,7 @@ function renderSocialLinks(links) {
 function renderAboutSection(about) {
   const container = document.querySelector(".description.about");
   container.innerHTML = about
-    .map((para) => `<p>${highlightKeywords(para.content, para.keywords)}</p>`)
+    .map((para) => `<p>${processKeywords(para.content, para.keywords)}</p>`)
     .join("");
 }
 
@@ -122,7 +139,7 @@ function renderExperienceSection(experiences) {
           <div class="date">${exp.duration}</div>
           <div class="details">
             <h3 class="position"><span>${exp.role}, ${exp.company}</span></h3>
-            <p class="job-description">${highlightKeywords(
+            <p class="job-description">${processKeywords(
               exp.description,
               exp.keywords
             )}</p>
@@ -146,7 +163,7 @@ function renderProjectsSection(projects) {
               <svg class="bold-right-arrow" xmlns="http://www.w3.org/2000/svg"><path d="m2.828 15.555 7.777-7.779L2.828 0 0 2.828l4.949 4.948L0 12.727l2.828 2.828z"/></svg>
               <h3 class="project-topic">${proj.topic}</h3>
             </span>
-            <p class="project-description">${highlightKeywords(
+            <p class="project-description">${processKeywords(
               proj.description,
               proj.keywords
             )}</p>
@@ -168,19 +185,19 @@ function renderAboutWebsiteSection(content) {
     html += `<span>`;
     switch (item.type) {
       case "paragraph":
-        html += `<p class="para-content">${highlightKeywords(
+        html += `<p class="para-content">${processKeywords(
           item.content,
           item.keywords
         )}</p>`;
         break;
       case "list":
-        html += `<p class="heading">${highlightKeywords(
+        html += `<p class="heading">${processKeywords(
           item.heading,
           item.keywords
         )}</p>`;
         html += `<ul class="content-list">`;
         item.items.forEach((point) => {
-          html += `<li class="content-point">${highlightKeywords(
+          html += `<li class="content-point">${processKeywords(
             point.content,
             point.keywords
           )}</li>`;
