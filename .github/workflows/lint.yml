@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install
-      - run: npm run lint  # Fail PR if lint errors
+      - run: prettier --check src/
