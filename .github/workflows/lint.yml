@@ -9,4 +9,5 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - run: init @eslint/config
       - run: npm run lint
