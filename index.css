@@ -108,6 +108,10 @@ a {
   color: var(--color-on-surface-0);
 }
 
+.hidden {
+  display: none;
+}
+
 .error-container {
   display: none;
   flex-direction: column;
@@ -438,11 +442,17 @@ footer p {
   border-radius: 4px;
   min-height: 20px;
   animation: pulse 1.5s infinite;
+  width: 40px;
+  height: 40px;
 }
 
 .highlight-keyword {
   color: var(--color-on-background-variant);
   font-weight: bold;
+}
+
+.about-website {
+  margin-top: 4rem;
 }
 
 .about-website-content {

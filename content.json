@@ -14,10 +14,22 @@
     }
   ],
   "about": [
-    "I’m a full stack engineer early in my career, passionate about developing systems that prioritize maintainability and scalability, building robust foundations for future growth.",
-    "Beyond technical implementation, my favorite work lies at the intersection of design and development. I’m energized by the challenge of translating complex, evolving requirements into elegant, high-performing features that users genuinely enjoy.",
-    "I thrive in dynamic environments where I can continuously grow, solve complex problems, and build software that stands the test of time.",
-    "Outside of work, I enjoy investing, playing chess, and constantly seeking opportunities to grow both personally and professionally."
+    {
+      "content": "I'm a full stack engineer early in my career, passionate about developing systems that prioritize maintainability and scalability, building robust foundations for future growth.",
+      "keywords": []
+    },
+    {
+      "content": "Beyond technical implementation, my favorite work lies at the intersection of design and development. I'm energized by the challenge of translating complex, evolving requirements into elegant, high-performing features that users genuinely enjoy.",
+      "keywords": []
+    },
+    {
+      "content": "I thrive in dynamic environments where I can continuously grow, solve complex problems, and build software that stands the test of time.",
+      "keywords": []
+    },
+    {
+      "content": "Outside of work, I enjoy investing, playing chess, and constantly seeking opportunities to grow both personally and professionally.",
+      "keywords": []
+    }
   ],
   "skills": [
     "Java",
@@ -65,31 +77,44 @@
     {
       "topic": "Singapore Jogging Spots Application",
       "description": "JavaFX application to manage jogging spots, with MySQL backend and CRUD functionality. Users filter locations by category (e.g., parks, stadiums) and modify data via a graphical interface.",
-      "link": "https://github.com/yc-chai/rp-project-jogging-spots-app"
+      "link": "https://github.com/yc-chai/rp-project-jogging-spots-app",
+      "keywords": []
     },
     {
-      "topic": "Hotel Management System (Java Console App) ",
+      "topic": "Hotel Management System (Java Console App)",
       "description": "Java console application for hotel administration, featuring room inventory management, dynamic pricing updates, member registration, reservation handling, revenue analytics, and promotional lucky draws—all via a command-line interface.",
-      "link": "https://github.com/yc-chai/rp-project-hotel-management"
+      "link": "https://github.com/yc-chai/rp-project-hotel-management",
+      "keywords": []
     }
   ],
   "about_website": [
     {
       "type": "paragraph",
-      "content": "I built this portfolio completely from scratch - no templates, no frameworks. Just me, HTML, CSS and JavaScript. It's been a fun challenge to create everything myself while keeping it clean and responsive."
+      "content": "I built this portfolio completely from scratch - no templates, no frameworks. Just me, HTML, CSS and JavaScript. It's been a fun challenge to create everything myself while keeping it clean and responsive.",
+      "keywords": []
     },
     {
       "type": "list",
-      "heading": "Some highlight:",
+      "heading": "Some highlights:",
       "items": [
-        "Mobile-friendly design that works on any device",
-        "Subtle interactive touches to make it feel alive",
-        "Content managed through JSON to keep things organized"
+        {
+          "content": "Mobile-friendly design that works on any device",
+          "keywords": []
+        },
+        {
+          "content": "Subtle interactive touches to make it feel alive",
+          "keywords": []
+        },
+        {
+          "content": "Content managed through JSON to keep things organized",
+          "keywords": []
+        }
       ]
     },
     {
       "type": "paragraph",
-      "content": "The design was inspired by portfolio I admire, but every line of code is my own. Building this taught me so much about CSS layouts and creating smooth user experiences."
+      "content": "The design was inspired by portfolio I admire, but every line of code is my own. Building this taught me so much about CSS layouts and creating smooth user experiences.",
+      "keywords": []
     }
   ]
 }
