@@ -5,9 +5,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - run: npm ci
-      - run: init @eslint/config
-      - run: npm run lint
+          node-version: "23"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npx eslint .
+
+      - name: Run Stylelint
+        run: npx stylelint "**/*.css"
+
+      - name: Run Json Lint
+        run: npx jsonlint-cli "**/*.json" --quiet
+
+      - name: Run HTMLHint
+        run: npx htmlhint "**/*.html"
