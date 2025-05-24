@@ -24,12 +24,12 @@
   --color-on-surface-3: #898989;
   --color-on-surface-4: #777777;
 
-  /* --color-background-variant: #2dd4be15; */
-  /* --color-on-background-variant: #5eead4; */
+  --color-on-surface-opacity-0: #d3d3d31a;
 
   --color-background-variant: #4fa29715;
-  /* --color-on-background-variant: #9acec6; */
   --color-on-background-variant: #81ead0;
+
+  --border-radius: 20px;
 }
 
 body,
@@ -84,7 +84,7 @@ video {
 }
 
 .frame {
-  padding: 3rem 1.5rem;
+  padding: 3rem 0 3rem 1.5rem;
   max-width: 1500px;
   min-height: 100vh;
   margin-left: auto;
@@ -377,6 +377,7 @@ svg.right-up-arrow {
   right: -1.5rem;
   top: -1rem;
   bottom: -1rem;
+  border-radius: var(--border-radius);
 }
 
 .list.projects li:hover .project-topic,
@@ -442,6 +443,34 @@ footer p {
 .highlight-keyword {
   color: var(--color-on-background-variant);
   font-weight: bold;
+}
+
+.about-website-content {
+  background-color: var(--color-on-surface-opacity-0);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.about-website-content .title {
+  text-decoration: underline;
+  color: var(--color-on-surface-1);
+}
+
+.about-website-content .description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-size: var(--font-body-xs);
+  color: var(--color-on-surface-1);
+}
+
+.about-website-content .description .heading {
+  font-weight: 600;
+}
+
+.about-website-content .description .content-point {
+  list-style: disc;
+  margin-left: 1.5rem;
 }
 
 @keyframes pulse {

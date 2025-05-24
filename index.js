@@ -49,6 +49,7 @@ function renderContent(data) {
   renderSkillsSection(data.skills);
   renderExperienceSection(data.experience);
   renderProjectsSection(data.projects);
+  renderAboutWebsiteSection(data.about_website);
 }
 
 // Render social links
@@ -90,24 +91,6 @@ function renderSkillsSection(skills) {
     )
     .join("");
 }
-
-// // Render experience section
-// function renderExperienceSection(experiences) {
-//   const container = document.querySelector(".list.experience");
-//   container.innerHTML = experiences
-//     .map(
-//       (exp) => `
-//         <li>
-//           <div class="date">${exp.duration}</div>
-//           <div class="details">
-//             <h3 class="position"><span>${exp.role}, ${exp.company}</span></h3>
-//             <p class="job-description">${exp.description}</p>
-//           </div>
-//         </li>
-//       `
-//     )
-//     .join("");
-// }
 
 function renderExperienceSection(experiences) {
   const container = document.querySelector(".list.experience");
@@ -154,6 +137,33 @@ function renderProjectsSection(projects) {
       `
     )
     .join("");
+}
+
+function renderAboutWebsiteSection(content) {
+  const container = document.querySelector(
+    ".about-website-content .description"
+  );
+  let html = "";
+
+  content.forEach((item) => {
+    html += `<span>`;
+    switch (item.type) {
+      case "paragraph":
+        html += `<p class="para-content">${item.content}</p>`;
+        break;
+      case "list":
+        html += `<p class="heading">${item.heading}</p>`;
+        html += `<ul class="content-list">`;
+        item.items.forEach((point) => {
+          html += `<li class="content-point">${point}</li>`;
+        });
+        html += "</ul>";
+        break;
+    }
+    html += `</span>`;
+  });
+
+  container.innerHTML = html;
 }
 
 // Show error fallback UI

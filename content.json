@@ -72,5 +72,24 @@
       "description": "Java console application for hotel administration, featuring room inventory management, dynamic pricing updates, member registration, reservation handling, revenue analytics, and promotional lucky draws—all via a command-line interface.",
       "link": "https://github.com/yc-chai/rp-project-hotel-management"
     }
+  ],
+  "about_website": [
+    {
+      "type": "paragraph",
+      "content": "I built this portfolio completely from scratch - no templates, no frameworks. Just me, HTML, CSS and JavaScript. It's been a fun challenge to create everything myself while keeping it clean and responsive."
+    },
+    {
+      "type": "list",
+      "heading": "Some highlight:",
+      "items": [
+        "Mobile-friendly design that works on any device",
+        "Subtle interactive touches to make it feel alive",
+        "Content managed through JSON to keep things organized"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The design was inspired by portfolio I admire, but every line of code is my own. Building this taught me so much about CSS layouts and creating smooth user experiences."
+    }
   ]
 }
