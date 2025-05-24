@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "lint": "eslint src/js && prettier --check src/",
+    "lint": "eslint src/js/ && prettier --check src/",
     "format": "prettier --write src/",
     "optimize-images": "npx imagemin public/img/* --out-dir=public/img/optimized"
   },
