@@ -61,13 +61,11 @@ function processKeywords(text, keywords) {
   keywords.forEach((keyword) => {
     const escaped = escapeRegExp(keyword.text);
     if (keyword.type === "link") {
-      replacements[
-        escaped
-      ] = `<a href="${keyword.url}" class="link-keyword" target="_blank">${keyword.text}</a>`;
+      replacements[escaped] =
+        `<a href="${keyword.url}" class="link-keyword" target="_blank">${keyword.text}</a>`;
     } else {
-      replacements[
-        escaped
-      ] = `<span class="highlight-keyword">${keyword.text}</span>`;
+      replacements[escaped] =
+        `<span class="highlight-keyword">${keyword.text}</span>`;
     }
   });
 
@@ -212,7 +210,7 @@ function renderAboutWebsiteSection(content) {
 }
 
 // Show error fallback UI
-function showError(error) {
+function showError() {
   const content = document.querySelector(".content");
   content.innerHTML = ``;
 
