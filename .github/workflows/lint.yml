@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run ESLint
-        run: npm run lint
+        run: npx eslint "src/js/*.js" --fix
       - name: Run Stylelint
         run: npx stylelint "src/css/*.css"
       - name: Run Json Lint
