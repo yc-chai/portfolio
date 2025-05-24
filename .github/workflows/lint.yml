@@ -1,4 +1,4 @@
-name: Lint
+name: lint
 on: [pull_request]
 jobs:
   lint:
@@ -16,7 +16,7 @@ jobs:
 
       - name: Run ESLint
         run: |
-          npm init @eslint/config
+          npm init @eslint/config@latest --yes
           npx eslint "src/js/*.js"
 
       - name: Run Stylelint
