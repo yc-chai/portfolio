@@ -14,7 +14,9 @@ jobs:
       - name: Run ESLint
         run: npx eslint "src/js/*.js" --fix
       - name: Run Stylelint
-        run: npx stylelint "src/css/*.css"
+        run: |
+          npm init stylelint --yes
+          npx stylelint "src/css/*.css"
       - name: Run Json Lint
         run: npx jsonlint-cli "src/data/*.json" --quiet
       - name: Run HTMLHint
