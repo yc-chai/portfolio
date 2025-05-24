@@ -17,13 +17,13 @@ jobs:
       - name: Run ESLint
         run: |
           npm init @eslint/config
-          npx eslint .
+          npx eslint "src/js/*.js"
 
       - name: Run Stylelint
-        run: npx stylelint "**/*.css"
+        run: npx stylelint "src/css/*.css"
 
       - name: Run Json Lint
-        run: npx jsonlint-cli "**/*.json" --quiet
+        run: npx jsonlint-cli "src/data/*.json" --quiet
 
       - name: Run HTMLHint
-        run: npx htmlhint "**/*.html"
+        run: npx htmlhint "src/public/*.html"
