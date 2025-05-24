@@ -16,7 +16,7 @@ jobs:
 
       - name: Run ESLint
         run: |
-          npm init @eslint/config
+          npm init @eslint/create-config@latest
           npx eslint .
 
       - name: Run Stylelint
