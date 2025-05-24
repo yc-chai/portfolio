@@ -5,25 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "23"
-
       - name: Install dependencies
         run: npm install
-
       - name: Run ESLint
-        run: |
-          npm init @eslint/config@latest --yes
-          npx eslint "src/js/*.js"
-
+        run: npm run lint
       - name: Run Stylelint
         run: npx stylelint "src/css/*.css"
-
       - name: Run Json Lint
         run: npx jsonlint-cli "src/data/*.json" --quiet
-
       - name: Run HTMLHint
         run: npx htmlhint "src/public/*.html"
