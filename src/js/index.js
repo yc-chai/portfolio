@@ -31,7 +31,7 @@ function setupScrollSpy() {
 // Load and render content from content.json
 async function loadContent() {
   try {
-    const response = await fetch("content.json");
+    const response = await fetch("/src/data/content.json");
     if (!response.ok) {
       throw new Error("Failed to fetch content.json");
     }
