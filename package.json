@@ -18,5 +18,10 @@
     "rules": {
       "no-descending-specificity": null
     }
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-csstree-validator": "^3.0.0",
+    "stylelint-scss": "^6.12.0"
   }
 }
