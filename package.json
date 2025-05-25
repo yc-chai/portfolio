@@ -1,8 +1,8 @@
 {
-  "scripts": {
-    "lint": "eslint src/js && prettier --check src/",
-    "format": "prettier --write src/",
-    "optimize-images": "npx imagemin public/img/* --out-dir=public/img/optimized"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "stylelint" : "^16.0.0",
+    "jsonlint-cli": "~1.0.1",
+    "htmlhint": "^1.0.0"
+  }
 }
