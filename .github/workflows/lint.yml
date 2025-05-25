@@ -18,6 +18,6 @@ jobs:
           npm init stylelint --yes
           npx stylelint "src/css/*.css" --fix
       - name: Run Json Lint
-        run: npx jsonlint-cli "src/data/*.json" --quiet --fix
+        run: npx jsonlint-cli "src/data/*.json" --fix
       - name: Run HTMLHint
         run: npx htmlhint "src/public/*.html" --fix
