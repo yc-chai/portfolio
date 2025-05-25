@@ -1,3 +1,0 @@
-[build]
-  publish = "public"
-  command = "npm install --save-dev imagemin && npm run optimize-images"
