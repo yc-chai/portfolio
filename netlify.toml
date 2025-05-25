@@ -1,4 +1,3 @@
 [build]
   publish = "public"
-  command = "npm install imagemin"
-  command = "npm run optimize-images"
+  command = "npm install imagemin & npm run optimize-images"
