@@ -31,7 +31,7 @@ function setupScrollSpy() {
 // Load and render content from content.json
 async function loadContent() {
   try {
-    const response = await fetch("content.json");
+    const response = await fetch("/src/data/content.json");
     if (!response.ok) {
       throw new Error("Failed to fetch content.json");
     }
@@ -61,13 +61,11 @@ function processKeywords(text, keywords) {
   keywords.forEach((keyword) => {
     const escaped = escapeRegExp(keyword.text);
     if (keyword.type === "link") {
-      replacements[
-        escaped
-      ] = `<a href="${keyword.url}" class="link-keyword" target="_blank">${keyword.text}</a>`;
+      replacements[escaped] =
+        `<a href="${keyword.url}" class="link-keyword" target="_blank">${keyword.text}</a>`;
     } else {
-      replacements[
-        escaped
-      ] = `<span class="highlight-keyword">${keyword.text}</span>`;
+      replacements[escaped] =
+        `<span class="highlight-keyword">${keyword.text}</span>`;
     }
   });
 
@@ -212,7 +210,7 @@ function renderAboutWebsiteSection(content) {
 }
 
 // Show error fallback UI
-function showError(error) {
+function showError() {
   const content = document.querySelector(".content");
   content.innerHTML = ``;
 
