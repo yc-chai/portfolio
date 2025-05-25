@@ -8,5 +8,8 @@
     "htmlhint": "^1.0.0",
     "jsonlint-cli": "~1.0.1",
     "stylelint": "^16.19.1"
+  },
+  "dependencies": {
+    "imagemin": "^9.0.1"
   }
 }
