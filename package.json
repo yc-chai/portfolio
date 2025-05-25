@@ -4,6 +4,6 @@
     "eslint": "^9.0.0",
     "htmlhint": "^1.0.0",
     "jsonlint-cli": "~1.0.1",
-    "stylelint": "^16.0.0"
+    "stylelint": "^16.19.1"
   }
 }
