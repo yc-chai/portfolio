@@ -6,7 +6,7 @@
 */
 
 :root {
-  --titleFont: "Tilt Neon", sans-serif;
+  --title-font: "Tilt Neon", sans-serif;
   --body-font: "Poppins", sans-serif;
 
   --font-body-xl: 2.5rem;
@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--titleFont);
+  font-family: var(--title-font);
   font-weight: 700;
   padding: 0;
 }
@@ -216,9 +216,11 @@ nav {
   background-color: var(--color-on-surface-1);
 }
 
+/* stylelint-disable no-descending-specificity */
 .nav-link span:nth-child(2) {
   color: var(--color-on-surface-4);
 }
+/* stylelint-enable no-descending-specificity */
 
 .nav-link.active span:nth-child(2),
 .nav-link:hover span:nth-child(2) {
@@ -319,11 +321,13 @@ svg.right-up-arrow {
   font-size: var(--font-body-s);
 }
 
+/* stylelint-disable no-descending-specificity */
 .list li {
   margin-bottom: 3rem;
   display: -ms-grid;
   display: grid;
 }
+/* stylelint-enable no-descending-specificity */
 
 .list.about.skills {
   display: -webkit-box;
@@ -399,9 +403,11 @@ svg.right-up-arrow {
   transition-duration: 300ms;
 }
 
+/* stylelint-disable no-descending-specificity */
 .list.projects li {
   position: relative;
 }
+/* stylelint-enable no-descending-specificity */
 
 .list.projects li .project-link {
   position: absolute;
@@ -432,6 +438,7 @@ svg.right-up-arrow {
   background-color: var(--color-background-variant);
 }
 
+/* stylelint-disable no-descending-specificity */
 .projects li .project-topic {
   font-size: var(--font-body-m);
   line-height: 1.25;
@@ -440,6 +447,7 @@ svg.right-up-arrow {
   -ms-flex-align: baseline;
   align-items: baseline;
 }
+/* stylelint-enable no-descending-specificity */
 
 .projects li .project-description {
   line-height: 1.5;
@@ -465,11 +473,13 @@ svg.right-up-arrow {
   border-width: 0;
 }
 
+/* stylelint-disable no-descending-specificity */
 footer p {
   padding-top: 2rem;
   font-size: 0.775rem;
   line-height: 1.25rem;
 }
+/* stylelint-enable no-descending-specificity */
 
 .skeleton {
   background-color: #e0e0e0;
@@ -493,9 +503,11 @@ footer p {
   color: var(--color-on-background-variant);
 }
 
+/* stylelint-disable no-descending-specificity */
 .link-keyword {
   text-decoration: underline;
 }
+/* stylelint-enable no-descending-specificity */
 
 .about-website {
   margin-top: 4rem;
